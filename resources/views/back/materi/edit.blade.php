@@ -19,7 +19,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Edit Inovasi {{ $materi->judul_materi }}</div>
+						<div class="card-title">Edit Materi {{ $materi->judul_materi }}</div>
                         <a href="{{ route('materi.index') }}" class="btn btn-primary btn-sm ml-auto">Kembali</a>
 					</div>
 				</div>
@@ -28,7 +28,7 @@
 					@csrf
                     @method('PUT')
 						<div class="form-group">
-							<label for="judul">Judul Inovasi</label>
+							<label for="judul">Judul Materi</label>
 							<input type="text" name="judul_materi" class="form-control" id="text" value= "{{ $materi->judul_materi }}">
 						</div>
 						<div class="form-group">
@@ -40,7 +40,7 @@
 							<textarea name="deskripsi" class="form-control"> {{ $materi->deskripsi }} </textarea>
 						</div>
                         <div class="form-group">
-							<label for="kategori">Ketua Inspektorat</label>
+							<label for="kategori">Playlist</label>
                             
 							<select name="id_playlist" class="form-control"> 
                             @foreach ($playlist as $row)

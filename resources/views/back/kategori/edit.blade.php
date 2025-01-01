@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="card-body">
-					<form method="post" action="{{ route('kategori.update', $kategori->id) }}">
+					<form method="post" action="{{ route('kategori.update', $kategori->id_kategori) }}">
 					@csrf
                     @method('PUT')
 						<div class="form-group">

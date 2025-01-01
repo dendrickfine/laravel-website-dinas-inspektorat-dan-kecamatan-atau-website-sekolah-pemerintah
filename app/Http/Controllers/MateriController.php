@@ -58,10 +58,10 @@ class MateriController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id_playlist
+     * @param  int  $id_materi
      * @return \Illuminate\Http\Response
      */
-    public function show($id_playlist)
+    public function show($id_materi)
     {
         //
     }
@@ -69,12 +69,12 @@ class MateriController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id_playlist
+     * @param  int  $id_materi
      * @return \Illuminate\Http\Response
      */
-    public function edit($id_playlist)
+    public function edit($id_materi)
     {
-        $materi = Materi::find($id_playlist);
+        $materi = Materi::find($id_materi);
         $playlist = Playlist::all();
 
         return view('back.materi.edit', compact('materi','playlist'));
@@ -84,10 +84,10 @@ class MateriController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id_playlist
+     * @param  int  $id_materi
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id_playlist)
+    public function update(Request $request, $id_materi)
     {
         $this->validate($request, [
             'judul_materi' => 'required|min:4',
@@ -98,7 +98,7 @@ class MateriController extends Controller
             $data['slug'] = Str::slug($request->judul_materi);
             $data['gambar_materi'] = $request->file('gambar_materi')->store('materi');
             
-            $materi = Materi::findOrFail($id_playlist);
+            $materi = Materi::findOrFail($id_materi);
             Storage::delete($materi->gambar_materi);
             $materi->update($data);
             Alert::info('Updated', 'Data Berhasil Diperbarui');
@@ -107,7 +107,7 @@ class MateriController extends Controller
             $data = $request->all();
             $data['slug'] = Str::slug($request->judul_materi);
 
-            $materi = Materi::findOrFail($id_playlist);
+            $materi = Materi::findOrFail($id_materi);
             $materi->update($data);
             Alert::info('Updated', 'Data Berhasil Diperbarui');
             return redirect()->route('materi.index')->with(['success'=> 'Data Berhasil Diupdate']);
@@ -117,12 +117,12 @@ class MateriController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id_playlist
+     * @param  int  $id_materi
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id_playlist)
+    public function destroy($id_materi)
     {
-        $materi = Materi::find($id_playlist);
+        $materi = Materi::find($id_materi);
 
         Storage::delete($materi->gambar_materi);
         $materi->delete();

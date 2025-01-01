@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="card-body">
-                    <form action="{{ route('artikel.update', $artikel->id) }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('artikel.update', $artikel->id_artikel) }}" method="POST" enctype="multipart/form-data">
 					@csrf
                     @method('PUT')
 						<div class="form-group">
@@ -38,12 +38,12 @@
                         <div class="form-group">
 							<label for="kategori">Kategori</label>
                             
-							<select name="kategori_id" class="form-control"> 
+							<select name="id_kategori" class="form-control"> 
                             @foreach ($kategori as $row)
-                            @if ($row->id == $artikel->kategori_id)
-                            <option value="{{ $row->id }}" selected='selected'> {{ $row->nama_kategori }} </option>
+                            @if ($row->id_kategori == $artikel->id_kategori)
+                            <option value="{{ $row->id_kategori }}" selected='selected'> {{ $row->nama_kategori }} </option>
                             @else
-                            <option value="{{ $row->id }}">{{ $row->nama_kategori }}</option>
+                            <option value="{{ $row->id_kategori }}">{{ $row->nama_kategori }}</option>
                             @endif
                             @endforeach
                             </select>

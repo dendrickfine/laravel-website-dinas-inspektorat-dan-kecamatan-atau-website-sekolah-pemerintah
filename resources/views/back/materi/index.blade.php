@@ -19,8 +19,8 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Data Inovasi</div>
-                        <a href="{{ route('materi.create') }}" class="btn btn-primary btn-sm ml-auto"><i class ="fa fa-plus"></i> Tambah Inovasi</a>
+						<div class="card-title">Data Materi</div>
+                        <a href="{{ route('materi.create') }}" class="btn btn-primary btn-sm ml-auto"><i class ="fa fa-plus"></i> Tambah Materi</a>
 					</div>
 				</div>
 				<div class="card-body">
@@ -34,8 +34,9 @@
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>Judul Inovasi</th>
+                                <th>Judul Materi</th>
                                 <th>Deskripsi</th>
+                                <th>Playlist</th>
                                 <th>Status</th>
                                 <th>Gambar</th>
                                 <th>Aksi</th>
@@ -48,6 +49,7 @@
                                 <td>{{ $key + 1 }}</td>
                                 <td>{{ $row->judul_materi }}</td>
                                 <th>{{ $row->deskripsi }}</th>
+                                <td>{{ $row->playlist }}</td>
                                 <td>
                                     @if ($row->is_active == '1')
                                     Active

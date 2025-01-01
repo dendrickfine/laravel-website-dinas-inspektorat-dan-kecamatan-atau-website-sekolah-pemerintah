@@ -9,7 +9,11 @@ class Wbs extends Model
 {
     use HasFactory;
 
-    protected $table= 'wbs';
+    protected $table = 'wbs'; // Nama tabel
+    protected $primaryKey = 'id_wbs'; // Primary key
+    public $incrementing = false; // Jika primary key bukan auto increment
+    protected $keyType = 'string'; // Tipe data primary key
+
 
     protected $fillable =[
         'id_wbs','nama_pelapor','slug','email','nip','jabatan','instansi','nomor_telepon','alamat','gambar_ktp','nama_pegawai',

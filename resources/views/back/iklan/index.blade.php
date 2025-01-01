@@ -19,8 +19,8 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Data Galeri</div>
-                        <a href="{{ route('iklan.create') }}" class="btn btn-primary btn-sm ml-auto"><i class ="fa fa-plus"></i> Tambah Foto</a>
+						<div class="card-title">Data Iklan</div>
+                        <a href="{{ route('iklan.create') }}" class="btn btn-primary btn-sm ml-auto"><i class ="fa fa-plus"></i> Tambah Iklan</a>
 					</div>
 				</div>
 				<div class="card-body">
@@ -34,7 +34,7 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Judul Galeri</th>
+                                <th>Judul Iklan</th>
                                 <th>Link</th>
                                 <th>Tanggal</th>
                                 <th>Status</th>

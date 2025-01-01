@@ -19,8 +19,8 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Data Sambutan Ketua</div>
-                        <a href="{{ route('playlist.create') }}" class="btn btn-primary btn-sm ml-auto"><i class ="fa fa-plus"></i> Tambah Sambutan Ketua</a>
+						<div class="card-title">Data Playlist</div>
+                        <a href="{{ route('playlist.create') }}" class="btn btn-primary btn-sm ml-auto"><i class ="fa fa-plus"></i> Tambah Playlist</a>
 					</div>
 				</div>
 				<div class="card-body">

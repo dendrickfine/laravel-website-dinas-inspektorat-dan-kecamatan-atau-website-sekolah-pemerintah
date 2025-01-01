@@ -19,7 +19,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Edit Galeri Foto {{ $iklan->judul }}</div>
+						<div class="card-title">Edit Iklan {{ $iklan->judul }}</div>
                         <a href="{{ route('iklan.index') }}" class="btn btn-primary btn-sm ml-auto">Kembali</a>
 					</div>
 				</div>
@@ -28,11 +28,11 @@
 					@csrf
                     @method('PUT')
 						<div class="form-group">
-							<label for="judul">Judul Galeri</label>
+							<label for="judul">Judul Iklan</label>
 							<input type="text" name="judul" class="form-control" id="text" value= "{{ $iklan->judul }}">
 						</div>
                         <div class="form-group">
-							<label for="judul">Link Google Drive(jika tidak ada isi #)</label>
+							<label for="judul">Link (jika tidak ada isi #)</label>
 							<input type="text" name="link" class="form-control" id="text" value= "{{ $iklan->link }}">
 						</div>
                         <div class="form-group">

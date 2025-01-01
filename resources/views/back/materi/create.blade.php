@@ -32,7 +32,7 @@
 						</div>
                         <div class="form-group">
 							<label for="link">Link Materi</label>
-							<input type="text" name="link" class="form-control" placeholder="Enter Link Inovasi">
+							<input type="text" name="link" class="form-control" placeholder="Enter Link">
 						</div>
                         <div class="form-group">
 							<label for="deskripsi">Deskripsi</label>
@@ -40,7 +40,6 @@
 						</div>
                         <div class="form-group">
 							<label for="kategori">Playlist</label>
-                            
 							<select name="id_playlist" class="form-control"> 
                             @foreach ($playlist as $row)
                             <option value="{{ $row->id_playlist }}">{{ $row->judul_playlist }}</option>

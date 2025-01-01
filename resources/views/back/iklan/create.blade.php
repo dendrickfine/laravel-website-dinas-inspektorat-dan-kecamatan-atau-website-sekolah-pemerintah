@@ -19,7 +19,7 @@
 			<div class="card full-height">
 				<div class="card-header">
 					<div class="card-head-row">
-						<div class="card-title">Tambah Galeri Foto</div>
+						<div class="card-title">Tambah Iklan</div>
                         <a href="{{ route('iklan.index') }}" class="btn btn-primary btn-sm ml-auto">Kembali</a>
 					</div>
 				</div>
@@ -27,12 +27,12 @@
                     <form action="{{ route('iklan.store') }}" method="POST" enctype="multipart/form-data">
 					@csrf
 						<div class="form-group">
-							<label for="judul">Judul Galeri</label>
-							<input type="text" name="judul" class="form-control" id="text" placeholder="Masukan Judul Galeri">
+							<label for="judul">Judul Iklan</label>
+							<input type="text" name="judul" class="form-control" id="text" placeholder="Masukan Judul">
 						</div>
                         <div class="form-group">
-							<label for="judul">Link Google Drive(jika tidak ada isi #)</label>
-							<input type="text" name="link" class="form-control" id="text" placeholder="Masukan Link Galeri">
+							<label for="judul">Link(jika tidak ada isi #)</label>
+							<input type="text" name="link" class="form-control" id="text" placeholder="Masukan Link">
 						</div>
                         <div class="form-group">
 							<label for="status">Status</label>

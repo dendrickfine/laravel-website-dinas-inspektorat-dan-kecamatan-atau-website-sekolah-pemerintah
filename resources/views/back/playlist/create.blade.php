@@ -28,7 +28,7 @@
 					@csrf
 						<div class="form-group">
 							<label for="judul">Nama Playlist</label>
-							<input type="text" name="judul_playlist" class="form-control" id="text" placeholder="Enter Nama Ketua">
+							<input type="text" name="judul_playlist" class="form-control" id="text" placeholder="Enter Nama Playlist">
 						</div>
                         <div class="form-group">
 							<label for="body">Deskripsi</label>

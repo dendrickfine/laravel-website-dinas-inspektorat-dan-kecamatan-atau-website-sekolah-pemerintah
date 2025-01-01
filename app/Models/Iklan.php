@@ -9,7 +9,11 @@ class Iklan extends Model
 {
     use HasFactory;
 
-    protected $table = 'iklan';
+    protected $table = 'iklan'; // Nama tabel
+    protected $primaryKey = 'id_iklan'; // Primary key
+    public $incrementing = false; // Jika primary key bukan auto increment
+    protected $keyType = 'string'; // Tipe data primary key
+
 
     protected $fillable = [
         'id_iklan','judul','link','gambar_iklan','status'

@@ -41,14 +41,14 @@
                         </li>
 						<li class="nav-item"> 
                             <a href="{{ route('playlist.index') }}">
-                                <i class="fas fa-user"></i>
-                                <p>Sambutan Ketua</p>
+                                <i class="fas fa-list"></i>
+                                <p>Playlist</p>
                             </a>
                         </li>
 						<li class="nav-item"> 
                             <a href="{{ route('iklan.index') }}">
                                 <i class="fas fa-film"></i>
-                                <p>Galeri</p>
+                                <p>Iklan</p>
                             </a>
                         </li>
 						<li class="nav-item"> 
@@ -60,7 +60,7 @@
                         <li class="nav-item"> 
                             <a href="{{ route('materi.index') }}">
                                 <i class="fas fa-lightbulb"></i>
-                                <p>Inovasi</p>
+                                <p>Materi</p>
                             </a>
                         </li>
                         <li class="nav-item"> 
