@@ -25,7 +25,7 @@
 	        <span class="fa fa-bars"></span> Menu
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav m-auto" style="font-family: 'Vollkorn', serif;">
+	        <ul class="navbar-nav m-auto">
 	        	<li class="nav-item active"><a href="/" class="nav-link">BERANDA</a></li>
 	        	<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROFIL</a>

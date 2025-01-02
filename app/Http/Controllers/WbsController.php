@@ -120,7 +120,7 @@ class WbsController extends Controller
     }
 
     public function detail($id_wbs){
-        $wbs = Wbs::where('id',$id_wbs)->first();
+        $wbs = Wbs::where('id_wbs',$id_wbs)->first();
 
         return view('back.wbs.detail-wbs',[
         'wbs'=> $wbs

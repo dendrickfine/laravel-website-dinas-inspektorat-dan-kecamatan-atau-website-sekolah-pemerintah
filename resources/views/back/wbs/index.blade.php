@@ -57,7 +57,7 @@
                                         <td>{{ $row->created_at }}</td>
                                         <td>
                                         <a href="{{ route('wbs.detail-wbs', $row->id_wbs) }}" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i> Details</a>
-                                        <form action="{{ route('wbs.destroy', $row->id_wbs) }}" method="post" class="d-inline" id="deleteForm{{ $row->id }}">
+                                        <form action="{{ route('wbs.destroy', $row->id_wbs) }}" method="post" class="d-inline" id="deleteForm{{ $row->id_wbs }}">
                                                 @csrf 
                                                 @method('delete')
                                                 <button class="btn btn-danger btn-sm" onclick="confirmDelete(event, '{{ $row->id_wbs }}')">

@@ -22,9 +22,9 @@ class FrontendController extends Controller
                           ->orWhereRaw('body LIKE ?', ['%'.$keyword.'%']);
                 })
                 ->latest()
-                ->simplePaginate(8); 
+                ->simplePaginate(5); 
         } else {
-            $artikel = Artikel::where('is_active', 1)->latest()->simplePaginate(8);
+            $artikel = Artikel::where('is_active', 1)->latest()->simplePaginate(5);
         }
         
         $kategori = Kategori::orderBy('nama_kategori')->get();
@@ -33,10 +33,6 @@ class FrontendController extends Controller
         $postinganTerbaru = Artikel::where('id_kategori', 'ART-lo46Q4qpdW')
                             ->where('is_active', 1)
                             ->latest()
-                            ->limit(6)
-                            ->get();
-        $wilayah = Artikel::where('id_kategori', 32)
-                            ->where('is_active', 1)
                             ->limit(6)
                             ->get();
 
@@ -52,7 +48,6 @@ class FrontendController extends Controller
             'subKategori' => $subKategori,
             'iklanA' => $iklanA,
             'inovasi' => $inovasi,
-            'wilayah' => $wilayah,
         ]);
     }    
     
@@ -89,7 +84,7 @@ class FrontendController extends Controller
         $artikel = Artikel::where('id_kategori', $kategori->id_kategori)
                         ->where('is_active', 1)
                         ->latest()
-                        ->simplePaginate(8);
+                        ->simplePaginate(5);
         
         // Memuat daftar kategori untuk sub-menu
         $subKategori = Kategori::orderBy('nama_kategori')->get();
@@ -98,10 +93,6 @@ class FrontendController extends Controller
         $postinganTerbaru = Artikel::where('id_kategori', 18)
                             ->where('is_active', 1)
                             ->latest()
-                            ->limit(6)
-                            ->get();
-        $wilayah = Artikel::where('id_kategori', 32)
-                            ->where('is_active', 1)
                             ->limit(6)
                             ->get();
         $inovasi =Materi::where('is_active', 1)->latest()->get();
@@ -118,7 +109,6 @@ class FrontendController extends Controller
             'slide' => $slide,
             'iklanA' => $iklanA,
             'inovasi' => $inovasi,
-            'wilayah'=> $wilayah,
         ]);
     }
     

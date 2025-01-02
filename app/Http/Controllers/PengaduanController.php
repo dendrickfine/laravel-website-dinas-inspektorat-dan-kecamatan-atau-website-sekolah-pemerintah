@@ -46,7 +46,7 @@ class PengaduanController extends Controller
     ]);
 
     $data = $request->all();
-    $data['id_wbs'] = 'ART-' . Str::random(10);
+    $data['id_pengaduan'] = 'ART-' . Str::random(10);
     $data['slug'] = Str::slug($request->nama);
     
     if ($request->hasFile('gambar_bukti')) {
@@ -109,7 +109,7 @@ class PengaduanController extends Controller
         return redirect()->route('pengaduan.index')->with(['success'=> 'Data Berhasil Dihapus']);
     }
     public function detail($id_pengaduan){
-        $pengaduan = Pengaduan::where('id',$id_pengaduan)->first();
+        $pengaduan = Pengaduan::where('id_pengaduan',$id_pengaduan)->first();
 
         return view('back.pengaduan.detail-pengaduan',[
         'pengaduan'=> $pengaduan

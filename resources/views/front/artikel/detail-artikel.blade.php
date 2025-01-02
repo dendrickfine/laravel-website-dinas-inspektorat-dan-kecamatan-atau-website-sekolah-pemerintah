@@ -13,8 +13,8 @@
 <div class="container">
 <hr>
     <div class="row">
-        <div class="col-lg-8 mt-3" data-aos="fade-right" style="font-family: 'Abel', sans-serif;">
-            <h2 style="font-family: 'Abel', sans-serif;">{{$artikel->judul}}</h2>
+        <div class="col-lg-8 mt-3" data-aos="fade-right">
+            <h2>{{$artikel->judul}}</h2>
             @if ($artikel->created_at)
             <h6><i class="far fa-calendar-days"></i> {{ $artikel->created_at->format('d F Y') }}</h6>
             @endif
@@ -34,11 +34,11 @@
         </div>
         <div class="col-lg-4 mt-4">
             <div class="detail-sidebar-terbaru">
-            <h4 style="font-family: 'Marcellus', serif;"><i class="fa fa-newspaper-o"></i> INFORMASI TERKINI</h4>
+            <h4><i class="fa fa-newspaper-o"></i> INFORMASI TERKINI</h4>
                 <hr>
                 @if ($postinganTerbaru)
                     @foreach ($postinganTerbaru as $row)
-                        <div class="media mt-3" data-aos="fade-left" style="font-family: 'Abel', sans-serif;">
+                        <div class="media mt-3" data-aos="fade-left">
                             <img src="{{ asset('uploads/' . $row->gambar_artikel) }}" style="width: 90px; height: 80px; object-fit: cover; border-radius: 10px;" class="card-img-top img-fluid mr-3 mt-2" alt="{{ $row->judul }}">
                             <div class="media-body">
                                 @if ($row->created_at)
@@ -56,9 +56,9 @@
                 <hr>
             </div>
             <div>
-            <h4 style="font-family: 'Marcellus', serif;"><i class="fa-solid fa-bullhorn"></i> PENGADUAN PUBLIK</h4>
+            <h4><i class="fa-solid fa-bullhorn"></i> PENGADUAN PUBLIK</h4>
             <hr>
-            <div class="d-flex flex-column align-items-center" data-aos="fade-left" style="font-family: 'Abel', sans-serif;">
+            <div class="d-flex flex-column align-items-center" data-aos="fade-left">
                 <div class="card mb-4 shadow-sm" style="width: 20rem; border-radius: 15px;">
                     <div class="card-body d-flex flex-column align-items-center">
                         <img src="{{ asset('uploads/lapor1.png') }}" style="width: 100%; color:#1e2c4d;height: auto; border-radius: 15px;">
@@ -88,7 +88,7 @@
             </div>
             <hr>
             <div class="detail-sidebar-terbaru">
-                <h4 style="font-family: 'Marcellus', serif;"><i class="fa-solid fa-globe"></i> INSTANSI TERKAIT</h4>
+                <h4><i class="fa-solid fa-globe"></i> INSTANSI TERKAIT</h4>
                 <hr>
                 <div style="text-align: center;" data-aos="fade-down">
                 <div style="margin-bottom: 20px;">
@@ -143,7 +143,7 @@
                                 </a>
                             </div>
                             <div class="text pt-3 w-100 text-center">
-                                <button class="btn-details"style="background-color: #fff; color:#1e2c4d; font-size:17px; border-radius:8px; font-family: 'Abel', sans-serif;" data-description="{{ $row->deskripsi }}">Details</button>
+                                <button class="btn-details"style="background-color: #fff; color:#1e2c4d; font-size:17px; border-radius:8px;" data-description="{{ $row->deskripsi }}">Details</button>
                             </div>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
 <div id="popup" class="popup">
     <div class="popup-content popop" style="width: 70%;">
         <span class="close-btn">&times;</span>
-        <p style="font-family: 'Abel', sans-serif;" id="popup-description"></p>
+        <p id="popup-description"></p>
     </div>
 </div>
 @endsection

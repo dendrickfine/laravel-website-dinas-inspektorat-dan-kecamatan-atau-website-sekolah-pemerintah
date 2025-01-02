@@ -152,35 +152,3 @@ body {
 	</div>
 </div>
 </body>
-<footer class="footer fixed-bottom" style="background-color: #1e2c4d; color:white;">
-				<div class="container-fluid" >
-					<nav class="pull-left">
-				<p>INSPEKTORAT KABUPATEN BEKASI</p>
-                <p>Komplek Perkantoran Pemerintahan Daerah Kabupaten Bekasi</p>
-                <p>Jln. Deltamas Boulevard Sukamahi</p>
-                <p>Cikarang Pusat Kabupaten Bekasi 17530</p>
-                <p>Jawa Barat - Indonesia</p>
-				<p>inspektoratkabbekasi@gmail.com</p>
-				<p>inspektorat@bekasikab.go.id</p>
-					</nav>			
-				</div>
-</footer>
-<footer class="footer" style="background-color: #1e2c4d; color:white;">
-				<div class="container-fluid" >
-					<nav class="pull-left">
-						
-					Hak Cipta © <span id="currentYear"></span> Inspektorat Kabupaten Bekasi | Bekasi Baru Bekasi Bersih
-
-							<script>
-								// Mendapatkan elemen dengan id "currentYear"
-								var currentYearElement = document.getElementById('currentYear');
-								
-								// Mendapatkan tahun saat ini
-								var currentYear = new Date().getFullYear();
-								
-								// Mengatur teks dalam elemen "currentYear" dengan tahun saat ini
-								currentYearElement.textContent = currentYear;
-							</script>
-					</nav>			
-				</div>
-</footer>

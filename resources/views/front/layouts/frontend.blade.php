@@ -17,17 +17,13 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- header -->
 
-  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital@0;1&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="shorcut icon" href="{{ asset('back/img/bandung.png') }}">
   <title>SMA Negeri Bandung</title>
 </head>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Marcellus&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Marcellus&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Marcellus&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 
 .carousel-item img {
     width: auto;

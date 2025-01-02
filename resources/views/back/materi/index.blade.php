@@ -49,7 +49,7 @@
                                 <td>{{ $key + 1 }}</td>
                                 <td>{{ $row->judul_materi }}</td>
                                 <th>{{ $row->deskripsi }}</th>
-                                <td>{{ $row->playlist }}</td>
+                                <td>{{ $row->playlist->judul_playlist }}</td>
                                 <td>
                                     @if ($row->is_active == '1')
                                     Active
